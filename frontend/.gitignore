@@ -1,7 +1,5 @@
-.DS_Store
-.tmp
-.git
-node_modules
-.settings
-*.log
-dist/
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
