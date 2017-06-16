@@ -31,8 +31,8 @@
           <div class="collapse">
 
             <ul class="nav navbar-nav">
-              <li><a ui-sref="Index" >Index</a></li>
-              <li><a ui-sref="BooksList" >BooksList</a></li>
+              <li><a ui-sref="index" >Index</a></li>
+              <li><a ui-sref="books-list" >BooksList</a></li>
             </ul>
           </div>
         </div>
@@ -42,7 +42,6 @@
     <div class="container">
 
       <ui-view></ui-view>
-    <div ng-view=""></div>
     </div>
 
     <div class="footer">
@@ -79,8 +78,13 @@
  
 
         <!-- endbuild -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+
+
         <script src="modules/books-list/books-list.module.js"></script>
         <script src="modules/books-list/books-list.route.js"></script>
+
+        
         
 </body>
 </html>

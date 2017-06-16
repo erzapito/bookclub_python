@@ -6,7 +6,7 @@
     
     .config(['$stateProvider', function($stateProvider) {
       var BooksList = {
-				name: 'bookClubApp.books-list',
+				name: 'books-list',
 				url: '/books-list',
         template: '<h3>hello world!</h3>'
 				/*views: {
@@ -17,7 +17,7 @@
 			};
 
       var Index = {
-				name: 'application.index',
+				name: 'index',
 				url: '/',
          template: '<h3>Its the UI-Router hello world app!</h3>'
 				/*views: {
