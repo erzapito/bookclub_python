@@ -1,6 +1,6 @@
 'use strict';
 
 (function () {
-  angular.module('header', []);
+  angular.module('app-header', []);
 
 })();
