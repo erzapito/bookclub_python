@@ -1,1 +1,25 @@
-inijncihnciernijn
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <a class="navbar-brand" ui-sref="default">bookClub</a>
+          </div>
+
+          <div class="collapse">
+
+            <ul class="nav navbar-nav">
+              <li><a ui-sref="index" >Index</a></li>
+              <li><a ui-sref="books-list" >BooksList</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<main-menu></main-menu>
+<h1>Libros actuales del club del libro</h1>
+
+<ul>
+  <li ng-repeat="book in booksList.books"> {{book.title}} escrito por {{book.author}} de {{book.owner}} </li>
+</ul>

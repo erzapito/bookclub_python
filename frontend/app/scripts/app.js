@@ -13,5 +13,14 @@
       'ngAnimate',
       'ngCookies',
       'ui.router',
-      'books-list'
-    ]);
+      'books-list',
+      'main-menu'
+    ])
+    .run(run);
+
+    /* @ngInject */
+    /*
+    function run($stateProvider) {
+      $state.go('application.index');
+    };
+*/

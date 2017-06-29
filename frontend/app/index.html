@@ -20,35 +20,11 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
 
-            <a class="navbar-brand" href="#/">bookClub</a>
-          </div>
 
-          <div class="collapse">
 
-            <ul class="nav navbar-nav">
-              <li><a ui-sref="index" >Index</a></li>
-              <li><a ui-sref="books-list" >BooksList</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      <ui-view name="application"></ui-view>
 
-    <div class="container">
-
-      <ui-view></ui-view>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -68,6 +44,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -78,11 +55,18 @@
  
 
         <!-- endbuild -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
 
 
         <script src="modules/books-list/books-list.module.js"></script>
         <script src="modules/books-list/books-list.route.js"></script>
+        <script src="modules/books-list/books-list.controller.js"></script>
+
+        <script src="modules/application/application.module.js"></script>
+        <script src="modules/application/application.route.js"></script>
+        <script src="modules/application/application.controller.js"></script>
+
+        <script src="common/main-menu/main-menu.module.js"></script>
+        <script src="common/main-menu/main-menu.directive.js"></script>
 
         
         
