@@ -1,12 +1,11 @@
 (function () {
   'use strict';
 
-console.log('directiva app');
   angular.module('application')
     /* @ngInject */
     
     .config( function($stateProvider) {
-      
+      console.log('entra');
       var Application = {
 				name: 'application',
 				url: '{path:.*}',

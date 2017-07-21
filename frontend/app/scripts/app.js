@@ -1,3 +1,5 @@
+  (function() {
+  
   'use strict';
 
   /**
@@ -14,13 +16,17 @@
       'ngCookies',
       'ui.router',
       'books-list',
-      'main-menu'
+      'main-menu',
+      'application'
     ])
+    /* @ngInject */
     .run(run);
 
-    /* @ngInject */
-    /*
-    function run($stateProvider) {
-      $state.go('application.index');
-    };
-*/
+    
+    
+    function run($state) {
+      //$state.go('application');
+    }
+  
+})();
+
